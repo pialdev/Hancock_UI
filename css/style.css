@@ -1,0 +1,82 @@
+/* All Common CSS Start  */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+/* All Common CSS End */
+/* Header Part CSS Start  */
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.nav-link {
+    color: #ddd;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald",
+        sans-serif;
+}
+.nav-link:hover{
+    color: #ddd;
+}
+.socialPart a{
+    margin: 0 8px;
+    color: #ddd;
+    font-family: "Oswald",
+        sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+}
+.socialPart a i{
+    margin-right: 8px;
+}
+/* Header Part CSS End */
+#bannerPart{
+    padding-top: 340px;
+    padding-bottom: 100px;
+    background: url(../images/banner\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Banner Part  Start  */
+/* Banner Part  End */
+/* Banner Part  Start  */
+/* Banner Part  End */
+/* Banner Part  Start  */
+/* Banner Part  End */
+/* Banner Part  Start  */
+/* Banner Part  End */
+/* Banner Part  Start  */
+/* Banner Part  End */
+/* Banner Part  Start  */
+/* Banner Part  End */
+/* Banner Part  Start  */
+/* Banner Part  End */
