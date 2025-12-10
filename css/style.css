@@ -369,10 +369,12 @@ p {
   padding-top: 80px;
   transition: 0.5s;
   transform: scale(0.95);
+  filter: grayscale(100%);
   width: 100%;
 }
 .liveImage img:hover {
   transform: scale(1.04);
+  filter: grayscale(0%);
 }
 .liveMatchHeading h3 {
   font-size: 25px;
@@ -581,24 +583,6 @@ p {
   padding: 90px 0;
   background: #121212;
 }
-
-.storeButtonPart {
-  position: relative;
-}
-/* .storeItem img {
-  justify-content: space-around;
-} */
-/* .storeButton {
-  display: flex;
-  justify-content: space-between;
-  top: 100px;
-  transition: 0.5s;
-} */
-
-/* .storeButton i {
-  color: #fff;
-} */
-
 .left {
   position: absolute;
   padding: 10px 13px;
@@ -649,50 +633,52 @@ p {
 
 .storeItem {
   padding: 20px 35px;
+  margin-right: 20px;
   background: #212121;
   transition: 0.5s;
+  /* position: relative; */
 }
-.storeItemSlider{
-  position: relative;
-}
-.prev{
- color: #ddd;
- font-size: 100px;
- position: absolute;
- top: 50%;
- left: 20px;
- transform: translateY(-50%);
- z-index: 9999;
-}
-.next{
- color: #ddd;
- font-size: 100px;
- position: absolute;
-  top: 50%;
- left: 20px;
- transform: translateY(-50%);
- z-index: 9999;
-}
+/* Store Slide Part Start  */
 .slick-dots{
   display: flex;
-   position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+  padding:10px 552px ;
 }
 .slick-dots li button {
   display: none;
 }
-.slick-dots li .slick-active {
-  background: teal;
-}
 .slick-dots li {
   margin: 0 10px;
-  font-size: 0;
+  font-size: 0px;
   height: 20px;
   width: 20px;
-  color: #ff4655;
+  background: #ffffff;
+  outline: 0;
+  border-radius: 50%;
+  
 }
+.slick-dots li.slick-active{
+  background: #ff4655;
+}
+.prev {
+  font-size: 40px;
+  color: #ff4655;
+  position: absolute;
+  top: 43%;
+  left: 30px;
+  transform: translateX(-50%);
+  z-index: 5;
+  cursor: pointer;
+}
+.next {
+  font-size: 40px;
+  color: #ff4655;
+  position: absolute;
+  top: 38%;
+  left: 615px;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+/* Store Slide Part End  */
 .storeItem:hover {
   background: rgba(155, 155, 155, 0.25);
 }

@@ -6,27 +6,26 @@ jQuery(document).ready(function ($) {
 });
 
 //  Auto Play Start
-// $(".storeItemSlider").slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 1000,
-//   arrows: false,
-//   dots: true,
-//   prevArrow: '<i class="fa-solid fa-circle-chevron-left prev"></i>',
-//   nextArrow: '<i class="fa-solid fa-circle-chevron-right next"></i>',
-//   responsive: [
-//     {
-//       breakpoint: 576,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2,
-//         infinite: true,
-//         dots: true,
-//       },
-//     },
-//   ],
-// });
+$(".storeSlide").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  dots: true,
+  prevArrow: '<i class="fa-solid fa-circle-chevron-left prev"></i>',
+  nextArrow: '<i class="fa-solid fa-circle-chevron-right next"></i>',
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true,
+      },
+    },
+  ],
+});
 //  Auto Play End
 //==== Back-to-top button
 $(window).on("scroll", function (event) {
