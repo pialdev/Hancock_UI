@@ -1,2 +1,8 @@
 font-family: "Oswald",sans-serif;
 font-family: "Barlow Condensed", sans-serif;
+
+<i class="fa-solid fa-circle-chevron-right"></i>
+<i class="fa-solid fa-circle-chevron-left"></i>
+
+data-aos="fade-right"
+data-aos="fade-left"

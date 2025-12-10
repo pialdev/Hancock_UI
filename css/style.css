@@ -35,6 +35,8 @@ p {
   left: 0;
   top: 0;
   width: 100%;
+  background: rgba(0, 0, 0, 0.703);
+  z-index: 2;
 }
 
 .nav-link {
@@ -250,12 +252,13 @@ p {
 }
 
 .counterItem h3 {
-  font-size: 58px;
+  font-size: 60px;
   font-weight: 600;
   font-family: "Barlow Condensed", sans-serif;
   color: #fff;
   padding-bottom: 20px;
   text-align: center;
+  display: inline-block;
 }
 
 .counterItem i {
@@ -304,12 +307,14 @@ p {
 }
 .witcherImage img {
   transition: 0.5s;
+  width: 100%;
 }
 .witcherImage img:hover {
   transform: scale(1.1);
 }
 .valorentImage img {
   transition: 0.5s;
+  width: 100%;
 }
 .valorentImage img:hover {
   transform: scale(1.1);
@@ -364,6 +369,7 @@ p {
   padding-top: 80px;
   transition: 0.5s;
   transform: scale(0.95);
+  width: 100%;
 }
 .liveImage img:hover {
   transform: scale(1.04);
@@ -375,13 +381,15 @@ p {
   font-family: "Barlow Condensed", sans-serif;
   padding: 60px 0;
 }
-.teamImg {
-  /* height: 100px; */
+/* .teamImg {
+  height: 100px;
   clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
   position: relative;
   background: #212121;
+} */
+.teamImg img {
+  width: 100%;
 }
-
 .teamImg h4 {
   position: absolute;
   font-size: 32px;
@@ -393,14 +401,14 @@ p {
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
 }
-.teamImgTwo {
+/* .teamImgTwo {
   /* height: 100px; */
-  clip-path: polygon(2% 0, 100% 0%, 100% 100%, 9% 100%);
-  position: relative;
-  background: #212121;
-}
+/* clip-path: polygon(2% 0, 100% 0%, 100% 100%, 9% 100%); */
+/* position: relative; */
+/* } */
 .teamImgTwo img {
-  padding-left: 320px;
+  /* padding-left: 320px; */
+  width: 100%;
 }
 .teamImgTwo h4 {
   position: absolute;
@@ -528,8 +536,9 @@ p {
   font-weight: 500;
   font-family: "Oswald", sans-serif;
   color: #ff4655;
-  
-  
+}
+.catalogImg img {
+  width: 100%;
 }
 .catalogLeft h4 {
   font-size: 40px;
@@ -560,509 +569,566 @@ p {
   display: inline-block;
   padding: 15px 30px;
   border-radius: 3px;
-  transition: .9s;
+  transition: 0.9s;
 }
-.catalogBtn a:hover{
+.catalogBtn a:hover {
   background: #ff465f;
   transform: scale(1.1);
 }
 /*Top Games Part  End */
 /* Store Part Start */
 #storePart {
-    padding: 90px 0;
-    background: #121212;
+  padding: 90px 0;
+  background: #121212;
 }
 
 .storeButtonPart {
-    position: relative;
+  position: relative;
 }
+/* .storeItem img {
+  justify-content: space-around;
+} */
+/* .storeButton {
+  display: flex;
+  justify-content: space-between;
+  top: 100px;
+  transition: 0.5s;
+} */
 
-.storeButton {
-    display: flex;
-    justify-content: space-between;
-    top: 100px;
-    transition: .5s;
-}
-
-.storeButton i {
-    color: #fff;
-}
+/* .storeButton i {
+  color: #fff;
+} */
 
 .left {
-    position: absolute;
-    padding: 10px 13px;
-    background: #FF4655;
-    border-radius: 50px;
-    top: 380px;
-    left: -25px;
-    transition: .5s;
+  position: absolute;
+  padding: 10px 13px;
+  background: #ff4655;
+  border-radius: 50px;
+  top: 380px;
+  left: -25px;
+  transition: 0.5s;
 }
 
 .left:hover {
-    background: #19c594;
+  background: #19c594;
 }
 
 .right {
-    position: absolute;
-    padding: 10px 13px;
-    background: #FF4655;
-    border-radius: 50px;
-    top: 380px;
-    right: -25px;
-    transition: .5s;
+  position: absolute;
+  padding: 10px 13px;
+  background: #ff4655;
+  border-radius: 50px;
+  top: 380px;
+  right: -25px;
+  transition: 0.5s;
 }
 
 .right:hover {
-    background: #19c594;
+  background: #19c594;
 }
 
 .storeHeading h3 {
-    font-size: 38px;
-    font-weight: 600;
-    color: #fff;
-    font-family: "Oswald", sans-serif;
-    line-height: 56px;
-    padding-bottom: 100px;
-    position: relative;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  line-height: 56px;
+  padding-bottom: 100px;
+  position: relative;
 }
 
 .storeHeading h3::after {
-    position: absolute;
-    height: 3px;
-    width: 120px;
-    background: #FF4655;
-    top: 100px;
-    right: 110px;
-    content: "";
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  background: #ff4655;
+  top: 100px;
+  right: 110px;
+  content: "";
 }
 
 .storeItem {
-    padding: 20px 35px;
-    background: #212121;
-    transition: .5s;
+  padding: 20px 35px;
+  background: #212121;
+  transition: 0.5s;
 }
-
+/* .storeItemSlider{
+  position: relative;
+}
+.prev{
+ color: #ddd;
+ font-size: 100px;
+ position: absolute;
+ top: 50%;
+ left: 20px;
+ transform: translateY(-50%);
+ z-index: 9999;
+}
+.next{
+ color: #ddd;
+ font-size: 100px;
+ position: absolute;
+  top: 50%;
+ left: 20px;
+ transform: translateY(-50%);
+ z-index: 9999;
+}
+.slick-dots{
+  display: flex;
+   position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li .slick-active {
+  background: teal;
+}
+.slick-dots li {
+  margin: 0 10px;
+  font-size: 0;
+  height: 20px;
+  width: 20px;
+  color: #ff4655;
+} */
 .storeItem:hover {
-    background: rgba(155, 155, 155, 0.25);
+  background: rgba(155, 155, 155, 0.25);
 }
 
 .storeItem h4 {
-    font-size: 40px;
-    font-weight: 500;
-    color: #fff;
-    font-family: "Oswald", sans-serif;
-    line-height: 60px;
-    text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  line-height: 60px;
+  text-align: center;
 }
 
 .storeItem img {
-    width: 100%;
+  width: 100%;
 }
 
 .storeItem h3 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #fff;
-    font-family: "Oswald", sans-serif;
-    line-height: 37px;
-    text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  line-height: 37px;
+  text-align: center;
 }
 
 .storeItem h5 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #FF4655;
-    font-family: "Oswald", sans-serif;
-    line-height: 24px;
-    text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff4655;
+  font-family: "Oswald", sans-serif;
+  line-height: 24px;
+  text-align: center;
 }
 
 /* Store Part End */
 
 /* Team Part Start */
 #teamPart {
-    padding: 100px 0 75px 0;
-    background: #191919;
+  padding: 100px 0 75px 0;
+  background: #191919;
 }
 
 .teamHeading h3 {
-    font-size: 38px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 46px;
-    font-family: "Barlow Condensed", sans-serif;
-    text-align: right;
-    letter-spacing: 2px;
-    position: relative;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 46px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: right;
+  letter-spacing: 2px;
+  position: relative;
 }
 
 .teamHeading h3::after {
-    position: absolute;
-    height: 3px;
-    width: 105px;
-    background: #FF4655;
-    bottom: 9px;
-    right: 90px;
-    content: "";
+  position: absolute;
+  height: 3px;
+  width: 105px;
+  background: #ff4655;
+  bottom: 9px;
+  right: 90px;
+  content: "";
 }
 
 .teamHeadingGap {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
-.teamImage {
-    position: relative;
-    filter: grayscale(100%);
-    transition: .5s;
+.teamImageL {
+  position: relative;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.teamImageR {
+  position: relative;
+  filter: grayscale(100%);
+  transition: 0.5s;
 }
 
 .teamImage img {
-    width: 100%;
+  width: 100%;
 }
 .teamImage:hover {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
+  width: 100%;
 }
 
 .teamImageText {
-    background: rgba(37, 36, 36, 0.4);
-    padding: 40px 60px 30px 30px;
-    position: absolute;
-    bottom: 0;
+  background: rgba(37, 36, 36, 0.4);
+  padding: 40px 60px 30px 30px;
+  position: absolute;
+  bottom: 0;
 }
 
 .teamImageText h3 {
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "Barlow Condensed", sans-serif;
-    color: #fff;
-    line-height: 36px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #fff;
+  line-height: 36px;
 }
 
 .teamImageText p {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
-    color: #fff;
-    line-height: 24px;
-    padding: 6px 230px 30px 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  line-height: 24px;
+  padding: 6px 230px 30px 0;
 }
 
 .teamImageBtn {
-    display: inline-block;
+  display: inline-block;
 }
 
 .teamImageBtn a {
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    font-family: "Oswald", sans-serif;
-    padding: 10px 20px;
-    background: #FF4655;
-    transition: .5s;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  padding: 10px 20px;
+  background: #ff4655;
+  transition: 0.5s;
 }
 
 .teamImageBtn a:hover {
-    color: #000;
+  color: #000;
 }
 
 .teamImageSocialOne {
-    position: absolute;
-    bottom: 16px;
-    right: 205px;
-    font-size: 35px;
-    padding: 1px 5px;
-    background: #FF4655;
-    border-radius: 50%;
-    transition: .5s;
+  position: absolute;
+  bottom: 16px;
+  right: 205px;
+  font-size: 35px;
+  padding: 1px 5px;
+  background: #ff4655;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .teamImageSocialTwo {
-    position: absolute;
-    bottom: 16px;
-    right: 130px;
-    font-size: 35px;
-    padding: 1px 5px;
-    background: #FF4655;
-    border-radius: 50%;
-    transition: .5s;
+  position: absolute;
+  bottom: 16px;
+  right: 130px;
+  font-size: 35px;
+  padding: 1px 5px;
+  background: #ff4655;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .teamImageSocialThree {
-    position: absolute;
-    bottom: 16px;
-    right: 55px;
-    font-size: 35px;
-    padding: 1px 5px;
-    background: #FF4655;
-    border-radius: 50%;
-    transition: .5s;
+  position: absolute;
+  bottom: 16px;
+  right: 55px;
+  font-size: 35px;
+  padding: 1px 5px;
+  background: #ff4655;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .teamImageSocial i {
-    color: #fff;
-    transition: .5s;
+  color: #fff;
+  transition: 0.5s;
 }
 
 .teamImageSocial i:hover {
-    color: #000;
+  color: #000;
 }
 
 .void {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 /* Team Part End */
 
 /* FAQ Part Start */
 #faqPart {
-    background: #121212;
-    padding: 55px 0 200px 0;
+  background: #121212;
+  padding: 55px 0 200px 0;
 }
 
 .faqHeading h3 {
-    font-size: 38px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 46px;
-    font-family: "Barlow Condensed", sans-serif;
-    letter-spacing: 2px;
-    position: relative;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 46px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
 }
 
 .faqHeading h3::after {
-    position: absolute;
-    height: 3px;
-    width: 100px;
-    right: 79px;
-    bottom: 8px;
-    background: #FF4655;
-    content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  right: 79px;
+  bottom: 8px;
+  background: #ff4655;
+  content: "";
 }
 
 .faqBody {
-    display: flex;
-    padding: 125px 0 75px 0;
+  display: flex;
+  padding: 125px 0 75px 0;
 }
 
 .faqPoint h4 {
-    font-size: 38px;
-    font-weight: 600;
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
-    background: #FF4655;
-    display: inline-block;
-    padding: 10px 20px 12px;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  background: #ff4655;
+  display: inline-block;
+  padding: 10px 20px 12px;
 }
 
 .faqText h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #FF4655;
-    font-family: "Barlow Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff4655;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .faqText p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #666;
-    font-family: "Oswald", sans-serif;
-    padding: 10px 0 0 0;
-    line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  font-family: "Oswald", sans-serif;
+  padding: 10px 0 0 0;
+  line-height: 24px;
 }
 
 .hrLine {
-    padding: 1px;
-    background: #666;
+  padding: 1px;
+  background: #666;
 }
 
 .vrLinePosition {
-    position: relative;
+  position: relative;
 }
 
 .vrLine {
-    position: absolute;
-    padding: 1px;
-    background: #666;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
+  position: absolute;
+  padding: 1px;
+  background: #666;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 /* FAQ Part End */
 
 /* Footer Part Start */
 #footerPart {
-    background: #191919;
-    padding: 100px 0;
+  background: #191919;
+  padding: 100px 0;
 }
 
 .footerTopPart {
-    position: relative;
+  position: relative;
 }
 
 .footerTop {
-    position: absolute;
-    background: #FF4655;
-    padding: 30px 15px 30px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    top: -178px;
-    left: 0;
+  position: absolute;
+  background: #ff4655;
+  padding: 30px 15px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  top: -178px;
+  left: 0;
 }
 
 .footerTopText h3 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
-    padding-right: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  padding-right: 25px;
 }
 
 .footerTopInput input {
-    padding: 10px;
-    background: #fff;
-    border: none;
-    border-radius: 50px;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 500;
-    color: #666;
-    padding-left: 20px;
-    font-family: "Barlow Condensed", sans-serif;
-    position: relative;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  padding-left: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  position: relative;
 }
 
 .footerTopInput button {
-    position: absolute;
-    top: 30px;
-    right: 14px;
-    padding: 10px;
-    background: #191919;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
-    border: none;
-    border-radius: 50px;
-    width: 10%;
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  padding: 10px;
+  background: #191919;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  border: none;
+  border-radius: 50px;
+  width: 10%;
 }
 
 .footerBody {
-    display: flex;
-    padding-top: 50px;
+  display: flex;
+  padding-top: 50px;
 }
 
 .footerRight p {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
-    color: #666;
-    line-height: 24px;
-    text-transform: uppercase;
-    padding: 30px 45px 60px 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  color: #666;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 30px 45px 60px 0;
 }
 
 .footerSocial {
-    display: flex;
+  display: flex;
 }
 
 .socialIcon {
-    padding: 10px 14px;
-    border-radius: 50%;
-    background: #212529;
-    margin-right: 10px;
-    transition: .5s;
+  padding: 10px 14px;
+  border-radius: 50%;
+  background: #212529;
+  margin-right: 10px;
+  transition: 0.5s;
 }
 
 .socialIcon:hover {
-    background: #FF4655;
-    transform: scale(1.1);
+  background: #ff4655;
+  transform: scale(1.1);
 }
 
 .socialIcon a {
-    color: #fff;
-    font-size: 30px;
+  color: #fff;
+  font-size: 30px;
 }
 
 .footerLinks h3 {
-    font-size: 25px;
-    font-weight: 600;
-    font-family: "Barlow Condensed", sans-serif;
-    color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #fff;
 }
 
 .footerLinks a {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
-    color: #666;
-    padding: 30px 20px 0 0;
-    display: inline-block;
-    transition: .5s;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  color: #666;
+  padding: 30px 20px 0 0;
+  display: inline-block;
+  transition: 0.5s;
 }
 
 .footerLinks a:hover {
-    color: #FF4655;
+  color: #ff4655;
 }
 
 .footerTeams h3 {
-    font-size: 25px;
-    font-weight: 600;
-    font-family: "Barlow Condensed", sans-serif;
-    color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #fff;
 }
 
 .footerTeams a {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
-    color: #666;
-    padding: 30px 40px 0 0;
-    display: inline-block;
-    transition: .5s;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  color: #666;
+  padding: 30px 40px 0 0;
+  display: inline-block;
+  transition: 0.5s;
 }
 
 .footerTeams a:hover {
-    color: #FF4655;
+  color: #ff4655;
 }
 
 .footerGallary h3 {
-    font-style: 25px;
-    font-weight: 600;
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
-    padding-bottom: 30px;
+  font-style: 25px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  padding-bottom: 30px;
 }
 
 .footerGallary img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Footer Part End */
 
 /* Copyright Part Start */
 #copyrightPart {
-    background: #191919;
+  background: #191919;
 }
 
 .copyrightHr {
-    padding: 0.5px;
-    background: #666;
+  padding: 0.5px;
+  background: #666;
 }
 
 .copyrightHeading h3 {
-    text-align: center;
-    padding: 25px 0;
-    font-size: 20px;
-    font: 400px;
-    line-height: 24px;
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 20px;
+  font: 400px;
+  line-height: 24px;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 /* Copyright Part End */
 /* Banner Part  Start  */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.back-to-top i {
+  color: #ff4655;
+  font-size: 20px;
+}
 /* Banner Part  End */
 /* Banner Part  Start  */
 /* Banner Part  End */

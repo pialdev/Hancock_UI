@@ -1,0 +1,63 @@
+/* / applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+/* applies to small devices  */
+@media (max-width: 767.98px) {
+}
+/* x-small devices  */
+@media (max-width: 575.98px) {
+  /* Banner Part Start */
+  .banner h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    line-height: 90px;
+    position: relative;
+}
+.banner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    width: 21px;
+    line-height: 24px;
+    padding-bottom: 50px;
+}
+.banner h1::after {
+    position: absolute;
+    height: 4px;
+    width: 90px;
+    background: #fff;
+    top: 50px;
+    right: 264px;
+    content: "";
+}
+  /* Banner Part End */
+}
+/* Header Part CSS End */
+
+
+/* Banner Part  Start  */
+.teamImageText {
+  background: rgba(37, 36, 36, 0.4);
+  padding: 40px 25px 30px 30px;
+  position: absolute;
+  bottom: 0;
+}
+.right {
+  position: absolute;
+  padding: 10px 12px;
+  background: #ff4655;
+  border-radius: 50px;
+  top: 380px;
+  right: 10px;
+  transition: 0.5s;
+}
