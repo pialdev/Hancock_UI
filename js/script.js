@@ -12,6 +12,7 @@ $(".storeSlide").slick({
   autoplay: true,
   autoplaySpeed: 1000,
   dots: true,
+  arrows:true,
   prevArrow: '<i class="fa-solid fa-circle-chevron-left prev"></i>',
   nextArrow: '<i class="fa-solid fa-circle-chevron-right next"></i>',
   responsive: [

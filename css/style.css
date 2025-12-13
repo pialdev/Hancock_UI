@@ -653,19 +653,18 @@ p {
   width: 20px;
   background: #ffffff;
   outline: 0;
-  border-radius: 50%;
-  
+  border-radius: 50%; 
 }
 .slick-dots li.slick-active{
   background: #ff4655;
 }
 .prev {
   font-size: 40px;
-  color: #ff4655;
+  color: #46ff68;
   position: absolute;
-  top: 43%;
-  left: 30px;
-  transform: translateX(-50%);
+  top: 50%;
+  left: -635px ;
+  transform: translateY(-50%);
   z-index: 5;
   cursor: pointer;
 }
@@ -673,11 +672,15 @@ p {
   font-size: 40px;
   color: #ff4655;
   position: absolute;
-  top: 38%;
-  left: 615px;
-  transform: translateY(50%);
+  top: 50%;
+  right: -0;
+  transform: translateY(-50%);
   cursor: pointer;
 }
+/* .storeSlide{
+  width: 100%;
+  background: #fff;
+} */
 /* Store Slide Part End  */
 .storeItem:hover {
   background: rgba(155, 155, 155, 0.25);
